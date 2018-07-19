@@ -1,0 +1,31 @@
+SET language turkish
+
+DECLARE @MonthsOfYear TABLE
+(
+	[MonthName] nvarchar(20) NULL
+	,[MonthNumber] int NULL
+	,[MonthYear] int null
+)
+
+DECLARE @Date DATE = DATEFROMPARTS(@Year, 1, 1)
+;WITH MoreSimple as
+(
+    SELECT   [MonthName]    = DATENAME(mm ,@Date)  
+            ,[MonthNumber]  = DATEPART(mm ,@Date)  
+            ,[MonthYear]    = DATEPART(yy ,@Date) 
+            ,NextRow        = DATEADD(MONTH, 1, @Date) 
+    UNION ALL
+    SELECT   DATENAME(mm ,NextRow)
+            ,DATEPART(mm ,NextRow)
+            ,DATEPART(yy ,NextRow)
+            ,DATEADD(MONTH, 1, NextRow)
+    FROM    MoreSimple
+)
+
+INSERT INTO @MonthsOfYear
+SELECT   TOP(12)
+         [MonthName]
+        ,[MonthNumber]
+        ,[MonthYear] 
+FROM MoreSimple
+OPTION(MAXRECURSION 0)
