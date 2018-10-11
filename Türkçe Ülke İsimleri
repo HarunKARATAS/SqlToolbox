@@ -1,0 +1,5 @@
+Tek satır kod yazmadan MSSQL'e json dosyayı aşağıdaki adımları izleyerek tamamlayabilirsiniz.
+1- Bu repoda bulunan ulkeler.json dosyasını excel üzerinden Veri-> Veri Al-> Dosyadan-> JSON yolu ile excele aktarın.
+2- İlk adımda oluşturduğumuz exceli farklı kaydet diyerek 97-2003 formatında kaydedin.
+3- MSSql'de database e sağ tıklayıp Tasks-> Import Data-> Data Source = "Microsoft Excel"-> Destination = "SQL Server Native Client 10.0" 'ı seçip gerekli db, kullanıcı adı, şifre bilgilerini girin
+4- Edit Mapping diyerek hangi sütunun hangi alana kaydedileceğini seçin ve Finish'e tıklayın.
