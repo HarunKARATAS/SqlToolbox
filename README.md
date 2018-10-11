@@ -7,4 +7,4 @@ Useful queries.
 
 3-  Sql Server Locklar Hk.eBook_SQL_Server_Concurrency_K_Delaney -  https://drive.google.com/open?id=1GecD3_dJyZ1cyRTbBgvOshiw_3MMC3im
 
-4- Türkçe Ülke İsimleri
+4- JSON Dosyayı MSSQL'e aktarma [Türkçe Ülke İsimleri](SqlToolbox/README.md)
