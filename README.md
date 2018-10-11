@@ -6,3 +6,5 @@ Useful queries.
 2 - Months Of Year : Ms Sql Query for Dynamic Repors
 
 3-  Sql Server Locklar Hk.eBook_SQL_Server_Concurrency_K_Delaney -  https://drive.google.com/open?id=1GecD3_dJyZ1cyRTbBgvOshiw_3MMC3im
+
+4- Türkçe Ülke İsimleri
