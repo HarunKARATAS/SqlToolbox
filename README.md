@@ -10,3 +10,5 @@ Useful queries.
 4- JSON Dosyayı MSSQL'e aktarma [Türkçe Ülke İsimleri](SqlToolbox/README.md)
 
 5- Audit History Query : Microsoft Dynamics CRM 2015 Audit Parser Query
+
+6- Query Language
