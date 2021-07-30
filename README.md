@@ -12,3 +12,5 @@ Useful queries.
 5- Audit History Query : Microsoft Dynamics CRM 2015 Audit Parser Query
 
 6- Query Language
+
+7- SPScan.sql DB içerisinde ki stored prosedürlerde kod parçası arayıp bulmayı sağlıyor.
